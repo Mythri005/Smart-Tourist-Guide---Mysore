@@ -76,8 +76,8 @@ function AllPlaces() {
 
     useEffect(() => {
         filterPlaces();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [searchTerm, selectedCategory, places]);
-
     const fetchPlaces = async () => {
         try {
             const response = await fetch('http://localhost:5000/api/places');

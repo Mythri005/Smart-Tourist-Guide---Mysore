@@ -155,7 +155,8 @@ function PlaceDetails({ addToFavorites }) {
         fetchPlaceDetails();
         fetchNearbyHotels();
         fetchNearbyRestaurants();
-    }, [id]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     const fetchPlaceDetails = async () => {
         try {
